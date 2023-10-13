@@ -26,7 +26,7 @@ jobs:
           # Replace this with your deployment script or commands
           # e.g., terraform apply, AWS CloudFormation deployment, etc.
           echo "Deploying infrastructure to AWS..."
-      - name: Clean up AWS credentials
-        run: |
-          aws configure unset aws_access_key_id
-          aws configure unset aws_secret_access_key
+      # - name: Clean up AWS credentials
+      #   run: |
+      #     aws configure unset aws_access_key_id
+      #     aws configure unset aws_secret_access_key
