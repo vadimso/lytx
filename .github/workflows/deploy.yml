@@ -26,6 +26,17 @@ jobs:
           # Replace this with your deployment script or commands
           # e.g., terraform apply, AWS CloudFormation deployment, etc.
           echo "Deploying infrastructure to AWS..."
+
+      - name: Deploy to AWS
+        run: |
+           cd terraform
+           terraform init
+           terraform apply --auto-approve
+        # Replace with commands to deploy your infrastructure using your IaC tool.
+        # For example, if using Terraform:
+           #cd terraform
+           #terraform init
+           #terraform apply --auto-approve    
       # - name: Clean up AWS credentials
       #   run: |
       #     aws configure unset aws_access_key_id
