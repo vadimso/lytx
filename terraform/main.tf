@@ -8,7 +8,7 @@ resource "aws_security_group" "ec2_sg" {
 }
 
 resource "aws_instance" "company1_instance" {
-  ami           = "ami-0261755bbcb8c4a84"I
+  ami           = "ami-0261755bbcb8c4a84"
   instance_type = "t2.micro"          # Replace with your desired instance type
   security_groups = [aws_security_group.ec2_sg.name]
   tags = {
