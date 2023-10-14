@@ -23,13 +23,13 @@ resource "aws_iam_policy_attachment" "ssm_policy_attachment" {
   roles      = [aws_iam_role.ssm_role.name]
 }
 
-resource "aws_instance" "company1_instance" {
+resource "aws_instance" "company1_ec2" {
   # ... (previous configuration)
 
   iam_instance_profile = aws_iam_instance_profile.ssm_instance_profile.name
 }
 
-resource "aws_instance" "company2_instance" {
+resource "aws_instance" "company2_ec2" {
   # ... (previous configuration)
 
   iam_instance_profile = aws_iam_instance_profile.ssm_instance_profile.name
