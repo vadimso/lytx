@@ -40,7 +40,7 @@ resource "aws_iam_policy" "ssm_policy" {
     {
       "Effect": "Allow",
       "Action": "ssm:CreateDocument",
-      "Resource": "arn:aws:ssm:REGION:ACCOUNT-ID:document/*"
+      "Resource": "arn:aws:ssm:us-east-1:931271008204:document/*"
     }
   ]
 }
