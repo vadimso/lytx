@@ -1,6 +1,3 @@
-# This Terraform configuration creates an IAM role (aws_iam_role), an IAM policy (aws_iam_policy), and attaches the policy to the role using the aws_iam_role_policy_attachment. The assume_role_policy of the role allows EC2 instances to assume this role. 
-# Replace REGION and ACCOUNT-ID in the ssm_policy with your specific information
-
 resource "aws_iam_role" "ec2_ssm_role" {
   name = "EC2SSMRole"
 
